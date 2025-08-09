@@ -1,0 +1,317 @@
+# Esta lista de diccionarios contiene todas las preguntas del trivial,
+# organizadas por categorías.
+
+preguntas_trivial = {
+  "Ciencia": [
+    {
+      "pregunta": "¿Qué elemento químico tiene el símbolo 'Fe'?",
+      "opciones": ["A. Flúor", "B. Fósforo", "C. Hierro", "D. Francio"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Cuál es la unidad básica de la vida?",
+      "opciones": ["A. Átomo", "B. Molécula", "C. Célula", "D. Organismo"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Qué planeta es conocido como el 'planeta rojo'?",
+      "opciones": ["A. Júpiter", "B. Marte", "C. Saturno", "D. Venus"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué ley de la física postula que 'la materia no se crea ni se destruye, solo se transforma'?",
+      "opciones": ["A. Ley de Newton", "B. Ley de la conservación de la energía", "C. Ley de la termodinámica", "D. Ley de la conservación de la materia"],
+      "respuesta_correcta": "D"
+    },
+    {
+      "pregunta": "¿Cuál es el proceso por el cual las plantas crean su propio alimento?",
+      "opciones": ["A. Fotosíntesis", "B. Respiración", "C. Transpiración", "D. Fermentación"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué rama de la física estudia el movimiento, la energía y la fuerza?",
+      "opciones": ["A. Termodinámica", "B. Óptica", "C. Mecánica", "D. Electromagnetismo"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Cuál es el componente principal del aire que respiramos?",
+      "opciones": ["A. Oxígeno", "B. Dióxido de carbono", "C. Nitrógeno", "D. Hidrógeno"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Cómo se llama la fuerza que atrae los cuerpos hacia el centro de la Tierra?",
+      "opciones": ["A. Fricción", "B. Magnetismo", "C. Gravedad", "D. Tensión"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Cuál es la fórmula química del agua?",
+      "opciones": ["A. H₂O₂", "B. CO₂", "C. H₂O", "D. C₆H₁₂O₆"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Qué científico propuso la teoría de la relatividad?",
+      "opciones": ["A. Isaac Newton", "B. Galileo Galilei", "C. Albert Einstein", "D. Stephen Hawking"],
+      "respuesta_correcta": "C"
+    }
+  ],
+  "Historia": [
+    {
+      "pregunta": "¿Quién fue el primer emperador de Roma?",
+      "opciones": ["A. Julio César", "B. Marco Antonio", "C. Augusto", "D. Nerón"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿En qué año se descubrió América?",
+      "opciones": ["A. 1490", "B. 1492", "C. 1500", "D. 1512"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué evento histórico marca el fin de la Edad Media?",
+      "opciones": ["A. La caída del Imperio Romano", "B. La toma de Constantinopla", "C. El Renacimiento", "D. La Revolución Francesa"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Quién fue el líder de la Unión Soviética durante la Segunda Guerra Mundial?",
+      "opciones": ["A. Lenin", "B. Stalin", "C. Trotsky", "D. Gorbachov"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuál fue la primera civilización de la historia?",
+      "opciones": ["A. Egipto", "B. Mesopotamia", "C. Grecia", "D. Roma"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué famoso militar cartaginés cruzó los Alpes con elefantes?",
+      "opciones": ["A. Aníbal Barca", "B. Escipión el Africano", "C. Julio César", "D. Alejandro Magno"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿En qué año cayó el Muro de Berlín?",
+      "opciones": ["A. 1985", "B. 1989", "C. 1991", "D. 1995"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué faraón egipcio se cree que fue el más poderoso y duradero?",
+      "opciones": ["A. Tutankamón", "B. Ramsés II", "C. Akhenatón", "D. Cleopatra"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿En qué siglo tuvo lugar la Revolución Industrial?",
+      "opciones": ["A. Siglo XVII", "B. Siglo XVIII", "C. Siglo XIX", "D. Siglo XX"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuál fue la primera guerra mundial?",
+      "opciones": ["A. La Guerra Fría", "B. La Guerra de los Cien Años", "C. La Guerra de las Galias", "D. La Gran Guerra"],
+      "respuesta_correcta": "D"
+    }
+  ],
+  "Geografia": [
+    {
+      "pregunta": "¿Cuál es la capital de Australia?",
+      "opciones": ["A. Sídney", "B. Melbourne", "C. Brisbane", "D. Canberra"],
+      "respuesta_correcta": "D"
+    },
+    {
+      "pregunta": "¿Cuál es el desierto más grande del mundo?",
+      "opciones": ["A. Desierto del Sahara", "B. Desierto de Gobi", "C. Desierto de Atacama", "D. Antártida"],
+      "respuesta_correcta": "D"
+    },
+    {
+      "pregunta": "¿En qué continente se encuentra el río Amazonas?",
+      "opciones": ["A. África", "B. América del Sur", "C. Asia", "D. Europa"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuál es el océano más grande de la Tierra?",
+      "opciones": ["A. Atlántico", "B. Índico", "C. Pacífico", "D. Ártico"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Qué país tiene forma de bota?",
+      "opciones": ["A. España", "B. Grecia", "C. Italia", "D. Portugal"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Cuál es la montaña más alta del mundo?",
+      "opciones": ["A. K2", "B. Monte Everest", "C. Monte Fuji", "D. Kilimanjaro"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuál es el país más grande del mundo por superficie terrestre?",
+      "opciones": ["A. China", "B. Estados Unidos", "C. Canadá", "D. Rusia"],
+      "respuesta_correcta": "D"
+    },
+    {
+      "pregunta": "¿Qué país se encuentra en más de un continente?",
+      "opciones": ["A. Rusia", "B. Brasil", "C. Egipto", "D. España"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Cuál es el mar más grande del mundo?",
+      "opciones": ["A. Mar Mediterráneo", "B. Mar Caribe", "C. Mar Arábigo", "D. Mar de la China Meridional"],
+      "respuesta_correcta": "D"
+    },
+    {
+      "pregunta": "¿Qué estrecho separa África de Europa?",
+      "opciones": ["A. Estrecho de Bering", "B. Estrecho de Magallanes", "C. Estrecho de Gibraltar", "D. Canal de Suez"],
+      "respuesta_correcta": "C"
+    }
+  ],
+  "Cultura general": [
+    {
+      "pregunta": "¿Qué famoso pintor cortó su propia oreja?",
+      "opciones": ["A. Leonardo da Vinci", "B. Vincent van Gogh", "C. Pablo Picasso", "D. Salvador Dalí"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuántos corazones tiene un pulpo?",
+      "opciones": ["A. Uno", "B. Dos", "C. Tres", "D. Cuatro"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Qué deporte se conoce como 'el rey de los deportes'?",
+      "opciones": ["A. Fútbol", "B. Béisbol", "C. Baloncesto", "D. Boxeo"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Quién escribió 'Don Quijote de la Mancha'?",
+      "opciones": ["A. Lope de Vega", "B. Miguel de Cervantes", "C. Garcilaso de la Vega", "D. Federico García Lorca"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué tipo de animal es la ballena?",
+      "opciones": ["A. Pez", "B. Anfibio", "C. Mamífero", "D. Reptil"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Cuál es el metal más abundante en la corteza terrestre?",
+      "opciones": ["A. Hierro", "B. Aluminio", "C. Cobre", "D. Oro"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué se celebra el 12 de octubre en España?",
+      "opciones": ["A. Día de la Constitución", "B. Día de la Hispanidad", "C. Día del Trabajo", "D. Día de la Madre"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿En qué ciudad se encuentra la Torre de Pisa?",
+      "opciones": ["A. Florencia", "B. Milán", "C. Venecia", "D. Pisa"],
+      "respuesta_correcta": "D"
+    },
+    {
+      "pregunta": "¿Cómo se llama el miedo a los espacios abiertos?",
+      "opciones": ["A. Claustrofobia", "B. Agorafobia", "C. Acrofobia", "D. Hidrofobia"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué significa la sigla 'WWW' en internet?",
+      "opciones": ["A. World Wild Web", "B. World Wide Web", "C. World Web Website", "D. Web World Wide"],
+      "respuesta_correcta": "B"
+    }
+  ],
+  "Cine": [
+    {
+      "pregunta": "¿Qué director dirigió 'Pulp Fiction'?",
+      "opciones": ["A. Martin Scorsese", "B. Steven Spielberg", "C. Quentin Tarantino", "D. Alfred Hitchcock"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Quién interpretó a Jack Dawson en 'Titanic'?",
+      "opciones": ["A. Matt Damon", "B. Brad Pitt", "C. Leonardo DiCaprio", "D. Tom Cruise"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Qué actor interpretó al Capitán Jack Sparrow en 'Piratas del Caribe'?",
+      "opciones": ["A. Johnny Depp", "B. Tom Hanks", "C. Christian Bale", "D. Robert Downey Jr."],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué película de animación de Disney ganó el primer Óscar a la Mejor Película de Animación?",
+      "opciones": ["A. Toy Story", "B. El Rey León", "C. Shrek", "D. Buscando a Nemo"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Cuál es la famosa frase de la película 'El Sexto Sentido'?",
+      "opciones": ["A. 'Soy tu padre'", "B. 'Veo gente muerta'", "C. 'Hasta la vista, baby'", "D. 'ET, mi casa'"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Quién es el director de la trilogía 'El Señor de los Anillos'?",
+      "opciones": ["A. Steven Spielberg", "B. Peter Jackson", "C. George Lucas", "D. Christopher Nolan"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué actor interpretó a Iron Man en el Universo Cinematográfico de Marvel?",
+      "opciones": ["A. Chris Evans", "B. Mark Ruffalo", "C. Robert Downey Jr.", "D. Chris Hemsworth"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Qué película ganó el premio Óscar a la Mejor Película en 1995?",
+      "opciones": ["A. Forrest Gump", "B. Pulp Fiction", "C. Titanic", "D. La vida es bella"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del famoso perro de la película 'La máscara'?",
+      "opciones": ["A. Milo", "B. Max", "C. Buddy", "D. Toto"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué estudio de animación creó la película 'Toy Story'?",
+      "opciones": ["A. DreamWorks", "B. Walt Disney Animation Studios", "C. Pixar", "D. Studio Ghibli"],
+      "respuesta_correcta": "C"
+    }
+  ],
+  "Música": [
+    {
+      "pregunta": "¿Qué banda de rock es famosa por la canción 'Bohemian Rhapsody'?",
+      "opciones": ["A. The Beatles", "B. Led Zeppelin", "C. Queen", "D. The Rolling Stones"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Quién es conocido como el 'Rey del Pop'?",
+      "opciones": ["A. Elvis Presley", "B. Prince", "C. Michael Jackson", "D. Stevie Wonder"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Cuál es el instrumento principal en un concierto de jazz?",
+      "opciones": ["A. Violín", "B. Saxofón", "C. Trombón", "D. Piano"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué cantante es conocido por la canción 'Like a Virgin'?",
+      "opciones": ["A. Britney Spears", "B. Lady Gaga", "C. Whitney Houston", "D. Madonna"],
+      "respuesta_correcta": "D"
+    },
+    {
+      "pregunta": "¿Cuál de estos compositores es famoso por sus obras barrocas?",
+      "opciones": ["A. Mozart", "B. Beethoven", "C. Bach", "D. Chopin"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Qué banda de rock lanzó el álbum 'The Dark Side of the Moon'?",
+      "opciones": ["A. The Who", "B. Pink Floyd", "C. Queen", "D. The Rolling Stones"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Quién es el artista detrás del éxito 'Shape of You'?",
+      "opciones": ["A. Bruno Mars", "B. Ed Sheeran", "C. Justin Bieber", "D. The Weeknd"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿En qué año se celebró el primer festival de Woodstock?",
+      "opciones": ["A. 1967", "B. 1969", "C. 1971", "D. 1973"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué compositor es conocido por 'Las cuatro estaciones'?",
+      "opciones": ["A. Antonio Vivaldi", "B. Johann Sebastian Bach", "C. Wolfgang Amadeus Mozart", "D. Ludwig van Beethoven"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del álbum de Nirvana que incluye la canción 'Smells Like Teen Spirit'?",
+      "opciones": ["A. Bleach", "B. In Utero", "C. Nevermind", "D. Unplugged in New York"],
+      "respuesta_correcta": "C"
+    }
+  ]
+}
