@@ -1,7 +1,4 @@
-# Esta lista de diccionarios contiene todas las preguntas del trivial,
-# organizadas por categorías.
-
-preguntas_trivial = {
+{
   "Ciencia": [
     {
       "pregunta": "¿Qué elemento químico tiene el símbolo 'Fe'?",

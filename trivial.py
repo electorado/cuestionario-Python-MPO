@@ -1,8 +1,11 @@
 import random
+import json
+import os
 from colorama import Fore, Style
 
-# Importar las preguntas del módulo que las contiene.
-from preguntas import preguntas_trivial
+# Definir el nombre del archivo donde se guardarán las preguntas.
+# Utilizar 'os.path.join' para asegurarnos de que la ruta sea compatible con cualquier sistema operativo.
+PREGUNTAS_FILE = os.path.join("data", "preguntas.json")
 
 # 1. Definir la función de puntuación
 def calcular_puntuacion(aciertos, total_preguntas):
@@ -31,6 +34,27 @@ def calcular_puntuacion(aciertos, total_preguntas):
     return puntuacion_entera
 
 # 2. Funciones para el juego del trivial
+
+def cargar_preguntas():
+    """
+    Carga las preguntas desde el archivo JSON.
+    Si el archivo no existe, devuelve un diccionario vacío y muestra un error.
+
+    Returns:
+        dict: Un diccionario con las preguntas organizadas por categorías.
+    """
+    try:
+        # Usamos 'with open' para asegurarnos de que el archivo se cierre correctamente.
+        with open(PREGUNTAS_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        print(Fore.RED + "Error: No se encontró el archivo de preguntas en el directorio 'data'." + Style.RESET_ALL)
+        return {}
+    except json.JSONDecodeError:
+        print(Fore.RED + "Error: El archivo de preguntas tiene un formato JSON inválido." + Style.RESET_ALL)
+        return {}
+
+
 def mostrar_pregunta(pregunta, color):
     """
     Muestra el enunciado y las opciones de una pregunta con el color de la categoría.
@@ -84,7 +108,7 @@ def mostrar_resultados(aciertos, total):
     print("\n--- Resultados ---")
     print(f"Total de preguntas: {total}")
     print(f"Aciertos: {aciertos}")
-    print(f"Porcentaje de aciertos: {porcentaje:.2f}%")
+    print(f"Porcentaje de aciertos: {round(porcentaje, 2)}%")
 
     if porcentaje > 95:
         print(Fore.GREEN + "🤩 ¡WOW Qué Crack!" + Style.RESET_ALL)
@@ -105,7 +129,7 @@ def empezar_trivial():
     print(Fore.BLUE + "--- Empezando el cuestionario ---" + Style.RESET_ALL)
     print(Fore.BLUE + "Pulsa '0' en cualquier momento para salir." + Style.RESET_ALL)
 
-    # Maper las categorías a los colores de la consola.
+    # Mapear las categorías a los colores de la consola.
     colores_categorias = {
         "Ciencia": Fore.CYAN,
         "Historia": Fore.YELLOW,
@@ -114,6 +138,11 @@ def empezar_trivial():
         "Cine": Fore.RED,
         "Música": Fore.BLUE
     }
+
+    # Cargar las preguntas desde el archivo JSON
+    preguntas_trivial = cargar_preguntas()
+    if not preguntas_trivial:
+        return 0
 
     # Crear una lista de todas las preguntas con su categoría.
     preguntas_mezcladas = []

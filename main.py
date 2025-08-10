@@ -1,6 +1,7 @@
-# Importamos las funciones de los módulos de ranking y trivial.
+# Importar las funciones de los módulos de ranking y trivial.
 from ranking import mostrar_ranking, registrar_usuario, guardar_ranking
 from trivial import empezar_trivial
+from colorama import Fore, Style
 
 
 def imprimir_menu(menu):
@@ -39,7 +40,7 @@ def main():
     """
     Función principal que ejecuta el menú de la aplicación.
     """
-    # El menú principal se define como un string multilínea para mayor claridad.
+
     menu_principal = """
 ***MENÚ PRINCIPAL***
 1. Regístrate
@@ -50,36 +51,50 @@ def main():
     opcion = 0
     print("¡Bienvenida/o al trivial!\n")
 
-    # Usamos un diccionario para almacenar la información del usuario registrado
+    # Uso de un diccionario para almacenar la información del usuario registrado
     # en la sesión actual.
     usuario_registrado = {"nombre": None}
 
-    # El bucle 'while' mantiene el programa en ejecución hasta que el usuario elija "Salir".
+    # Bucle 'while' que mantiene el programa en ejecución hasta que el usuario elija "Salir".
     while opcion != 4:
         imprimir_menu(menu_principal)
         opcion = recibir_opcion(1, 4)
 
         if opcion == 1:
             print("--- Seleccionaste 'Registrarte' ---")
-            # Llamamos a la función del módulo ranking para obtener el nombre del usuario.
             nombre_usuario = registrar_usuario()
             usuario_registrado["nombre"] = nombre_usuario
             print(f"¡Hola, {nombre_usuario}! Estás registrad@ para esta sesión.")
         elif opcion == 2:
             print("--- Seleccionaste 'Comenzar el trivial' ---")
+
+            # Verificar si el usuario está registrado y le damos la opción de hacerlo.
+            if not usuario_registrado["nombre"]:
+                print(
+                    Fore.YELLOW + "No estás registrad@, por lo que tu puntuación no se guardará en el ranking." + Style.RESET_ALL)
+                sub_opcion = input("Pulsa '1' para registrarte o cualquier otra tecla para continuar: ")
+                if sub_opcion == "1":
+                    nombre_usuario = registrar_usuario()
+                    usuario_registrado["nombre"] = nombre_usuario
+                    print(f"¡Hola, {nombre_usuario}! Estás registrad@ para esta sesión.")
+
+            puntuacion_final = empezar_trivial()
+
+            # Solo se guarda la puntuación si el usuario está registrado.
             if usuario_registrado["nombre"]:
-                puntuacion_final = empezar_trivial()
-                guardar_ranking(usuario_registrado["nombre"], puntuacion_final)
+                if puntuacion_final is not None:
+                    guardar_ranking(usuario_registrado["nombre"], puntuacion_final)
             else:
-                print("Por favor, regístrate primero para poder jugar.")
+                print(
+                    Fore.YELLOW + "No estás registrad@, por lo que tu puntuación no se guardará en el ranking." + Style.RESET_ALL)
         elif opcion == 3:
             print("--- Seleccionaste 'Ver ranking' ---")
-            # Llamamos a la función del módulo ranking para mostrar la lista.
             mostrar_ranking()
         elif opcion == 4:
             print("--- Saliendo de la aplicación. ¡Hasta pronto! ---")
 
 
-# Este bloque se asegura de que el código solo se ejecute si el archivo es el principal.
+# Este bloque asegura que el código solo se ejecute si el archivo es el principal.
 if __name__ == '__main__':
     main()
+
